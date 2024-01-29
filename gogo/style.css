@@ -1,0 +1,215 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "VCR OSD Mono", monospace;
+    background-image: url('https://simple-animation.ru/uploads/posts/2022-10/1665560626_13.gif');
+    color: #a0a0a0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    min-height: 300px;
+    height: 50vh;
+    margin-bottom: 2.07rem;
+    text-transform: uppercase;
+   
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__breadcrumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav__breadcrumb li {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.nav__menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav__menu li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.big-text {
+    font-size: clamp(24px, 4.6vw, 63px);
+    font-size: var(--font-size-secondary);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.glitchy-text {
+    --shadow-x-distance: 3px;
+    --shadow-y-distance: 2px;
+    text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 rgba(2, 183, 182, 0.4),
+        calc(var(--shadow-x-distance) * -1) calc(var(--shadow-y-distance) * -1) 0 rgba(183, 2, 2, 0.4);
+    transition: text-shadow 0.3s ease;
+}
+
+.glitchy-text:hover {
+    --shadow-x-distance: 6px;
+    --shadow-y-distance: 4px;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px; 
+}
+
+.contact p {
+    font-size: 18px; 
+    margin-bottom: 20px; 
+}
+
+.contact-email {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px; 
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.contact-email:hover {
+    color: #2980b9; 
+}
+
+
+.footer {
+    background-color: #000;
+    color: #a0a0a0;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.nav__menu li {
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__menu a:hover {
+    text-decoration: underline;
+}
+
+.about,
+.portfolio,
+.contact {
+    margin-bottom: 40px;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #000;
+    color: #a0a0a0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__menu {
+        margin-top: 20px;
+    }
+
+    .nav__menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+.about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-text {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.big-text {
+    font-size: 3em;
+}
+
+.glitchy-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.quote,
+.about {
+    margin-top: 0vh; 
+}
+
+
+.quote {
+    font-size: 1.5em;
+}
+
+.about {
+    font-size: 1.2em; 
+    padding: 50px 20px; 
+}
